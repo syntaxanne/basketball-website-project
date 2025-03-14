@@ -1,0 +1,207 @@
+/**************************\
+  Styles for home page
+\**************************/
+
+.introduction-section {
+    color: var(--text-color-second);
+    padding: 10px 100px 100px 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-statement-1 {
+    color: var(--text-color-second);
+}
+
+.intro-statement-2 {
+    font-size: 260%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.intro-statement-bold {
+    font-weight: bolder;
+}
+
+.intro-statement-3 {
+    font-size: 130%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*******************************\
+  Styles for basketball news stories section
+\*******************************/
+
+.news-section {
+    background-color: var(--text-color-second);
+    border-top: 1px solid var(--text-color-second);
+    border-bottom: 1px solid var(--text-color-second);
+}
+
+.news-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.news-heading h1 {
+    margin: 0;
+    font-size: 200%;
+}
+
+.news-heading h1:first-child {
+    font-size: 500%;
+}
+
+.news-heading h1:first-child span {
+    font-size: 170%;
+    color: var(--pink-shade);
+}
+
+/* Styling for container with news articles */
+.news-articles-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling to have the 4 articles side by side */
+.news-article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px 25px;
+    max-width: calc(25% - 20px);
+}
+
+.news-article .news-story-body {
+    margin-bottom: 50px;
+}
+
+/*Styling for each news story image*/
+.article-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.article-image img {
+    width: 300px;
+}
+
+/*Styling link to News page at bottom of each news story*/
+.news-articles-container a {
+    padding: 15px;
+}
+
+/* Style for hovering over link */
+.news-articles-container a:hover {
+    background-color: var(--green-shade);
+    color: var(--purple-shade);
+    font-weight: bold;
+    border: 1px solid var(--pink-shade);
+    border-radius: 8px;
+}
+
+.news-articles-container p {
+    font-size: 120%;
+}
+
+/* White background and black text */
+.article-1,
+.article-3 {
+    background-color: var(--text-color-second);
+    color: var(--text-color-main);
+}
+
+/* Black background and white text */
+.article-2,
+.article-4 {
+    background-color: var(--text-color-main);
+    color: var(--text-color-second);
+}
+
+/* Colors for news story anchor tags */
+.article-1 a,
+.article-3 a {
+    color: var(--text-color-main);
+}
+
+/* Colors for news story anchor tags */
+.article-2 a,
+.article-4 a {
+    color: var(--text-color-second);
+}
+
+/* Styling for news ending statement */
+#news-final-statement {
+    font-size: 260%;
+    color: var(--purple-shade);
+    margin: 30px;
+}
+
+#news-final-statement p {
+    margin: 5px;
+}
+
+#news-final-statement span {
+    color: var(--pink-shade);
+    font-size: 130%;
+}
+
+/****************************\
+  Styles for History section
+\****************************/
+
+.history-section {
+    color: var(--text-color-second);
+    border-top: 1px solid var(--text-color-main);
+    border-bottom: 1px solid var(--text-color-main);
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for history text */
+.history-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 120%;
+    text-align: justify;
+}
+
+#history-statement-1 {
+    font-size: 260%;
+    margin: 0;
+}
+
+#history-statement-1 span {
+    color: var(--orange-shade-2);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#history-statement-2 {
+    font-size: 140%;
+}
+
+/* Styling for the history section image */
+#history-img img {
+    width: 600px;
+    height: 700px;
+    opacity: 0.8;
+}
+
+
+

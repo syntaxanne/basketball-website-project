@@ -1,0 +1,57 @@
+:root {
+    /* Colours for text */
+    --text-color-main: black;
+    --text-color-second: white;
+    --pink-shade: #F93365FF;
+    --orange-shade-2: #E67E22;
+    --green-shade: #8dcc38;
+
+    /* Colors for gradient background */
+    --purple-shade: #2f0132;
+    --orange-shade: #F97556;
+    --yellow-shade: #F9C448;
+}
+
+html, body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: var(--text-color-second);
+}
+
+/* Gradient background used in every page */
+/* Learned from https://stackoverflow.com/a/38582577 */
+.bg-gradient {
+    background-color: var(--orange-shade);
+    background-image: linear-gradient(43deg, var(--yellow-shade) 0%, var(--orange-shade) 40%, var(--purple-shade) 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Styling for background video - code adapted from ChatGPT */
+.background-video {
+    /*Ensures the video covers the entire section*/
+    width: 100%;
+    height: 100%;
+
+    /*Makes sure the video fills the container without blurring the video*/
+    object-fit: cover;
+
+    /*Fixes the video in place so it doesn’t scroll with the page*/
+    position: fixed;
+
+    /*Positions the video to cover the full viewport*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    /*Moves the video behind other content so it's only a background*/
+    z-index: -1;
+}
+
+.glass-background {
+    background: rgba(0, 0, 0, 0.8);
+    /* Adds the frosted glass effect */
+    backdrop-filter: blur(10px);
+}

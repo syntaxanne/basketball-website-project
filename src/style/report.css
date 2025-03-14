@@ -1,0 +1,140 @@
+/**************************\
+  Styling for report page
+\**************************/
+
+/* 1st section */
+.first-section {
+    color: var(--text-color-second);
+    padding: 10px 100px 100px 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#topic {
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Exo 2", sans-serif;
+}
+
+.work-lists {
+    font-size: 240%;
+    font-family: "Big Shoulders Stencil", sans-serif;
+    text-align: left;
+}
+
+/* Learned from https://css-generators.com/custom-borders/ */
+.zigzag-bottom-border {
+    --mask:
+        radial-gradient(38px at 75% 100%, #0000 98%, #000) 50% calc(100% - 38px)/152px 100% repeat-x,
+        radial-gradient(38px at 25% 50%, #000 99%, #0000 101%) bottom/152px 76px repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+/****************************\
+  Styles for Second section
+\****************************/
+
+
+.second-section {
+    color: var(--text-color-main);
+    padding: 10px 100px 100px 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.explanation {
+    display: flex;
+    flex-direction: row;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+}
+
+/* Set image size */
+#work-list-img img {
+    max-width: calc(80%);
+}
+
+/* CSS for responsiveness */
+/* When the screen width becomes smaller than 1000px, change flex direction */
+@media screen and (max-width: 1000px) {
+    .explanation {
+        flex-direction: column;
+    }
+}
+
+/****************************\
+  Styles for Third section
+\****************************/
+
+.third-section {
+    border-top: 1px solid var(--text-color-second);
+    padding: 100px;
+    color: var( --text-color-second);
+}
+
+/* CSS for the text div inside third section */
+#third-section-text {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    animation: colorTransition 2s infinite alternate;
+}
+
+/* CSS to create color transition inside text div */
+/* Learned from https://www.geeksforgeeks.org/how-to-create-a-color-transition-effect-in-css/ */
+@keyframes colorTransition {
+    0% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    100% {
+        background-color: var(--text-color-primary);
+    }
+}
+
+/****************************\
+  Styles for Fourth section
+\****************************/
+
+#fourth-section-img img {
+    width: 300px;
+}
+
+.fourth-section {
+    padding: 100px;
+    background-color: var(--text-color-main);
+    color: var(--text-color-second);
+    display: flex;
+    flex-direction: row; 
+}
+
+/* Green deer is invisible when not hovering */
+#fourth-section-img .deer-hover-img {
+    display: none;
+}
+
+/* When hovering, pink deer goes invisible */
+#fourth-section-img:hover .deer-non-hover-img {
+    display: none;
+}
+
+/* When hovering, green deer becomes visible*/
+#fourth-section-img:hover .deer-hover-img {
+    display: inline-block;
+}
+
+
+/* CSS for responsiveness */
+/* When the screen width becomes smaller than 1000px, change flex direction */
+@media screen and (max-width: 1000px) {
+    .fourth-section {
+        flex-direction: column;
+    }
+}
+
+#fourth-section-text {
+    padding-left: 100px;
+}

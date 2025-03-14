@@ -1,0 +1,48 @@
+/* Styling for footer section */
+footer {
+    border-top: 1px solid var(--text-color-main);
+    border-bottom: 1px solid var(--text-color-main);
+    font-size: 130%;
+    padding: 100px;
+    color: var(--text-color-second);
+    
+}
+
+.footer-statements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#footer-statement-1 {
+    font-size: 200%;
+}
+
+.footer-icons {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.footer-icons img {
+    width: 60px;
+    height: 60px;
+}
+
+/* When NOT hovering: purple icon is VISIBLE and green icon is INVISIBLE */
+.footer-icons a .hover-img {
+    /* Making green icon invisible */
+    display: none; 
+}
+
+/* When hovering, the purple icon disappears */
+.footer-icons a:hover .non-hover-img {
+    display: none;
+}
+
+/* When hovering, the green icon appears */
+.footer-icons a:hover .hover-img {
+    display: inline-block;
+}

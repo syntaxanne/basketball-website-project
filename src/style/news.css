@@ -1,0 +1,110 @@
+/**************************\
+  Styles for News page
+\**************************/
+
+.news-top-section {
+    color: var(--text-color-second);
+    padding: 10px 155px 70px 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#news-page-title {
+    font-size: 350%;
+}
+
+#news-page-title span {
+    font-size: 200%;
+    font-weight: bold;
+    color: var(--green-shade);
+}
+
+#news-page-title-2 {
+    font-size: 180%;
+}
+
+#news-top-image img {
+    width: 350px;
+    opacity: 0.8;
+}
+
+/* Styling for top section bottom border */
+/* Code taken from https://css-generators.com/custom-borders/ */
+.zigzag-bottom-border {
+    --mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50%/60px 100%;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+/**************************\
+  Styles for stories section
+\**************************/
+
+.news-story {
+    background: var(--text-color-second);
+    border-top: 1px solid var(--text-color-second);
+    border-bottom: 1px solid var(--text-color-second);
+}
+
+.news-headline {
+    text-align: center;
+    font-size: 160%;
+    padding: 50px;
+}
+
+.story-text {
+    font-size: 125%;
+    text-align: justify;
+}
+
+.news-story-body {
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+}
+
+.news-story-body> :first-child {
+    flex: 2;
+    /* Takes 2/3 of the space */
+}
+
+.news-story-body> :last-child {
+    flex: 1;
+    /* Takes 1/3 of the space */
+}
+
+.article-img img {
+    width: 100%;
+}
+
+.article-img {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-left: 100px;
+}
+
+/* CSS for responsiveness */
+/* When the screen width becomes smaller than 1000px, change flex direction */
+@media screen and (max-width: 1000px) {
+    .news-story-body {
+        flex-direction: column;
+    }
+
+    .news-top-section {
+        flex-direction: column;
+    }
+
+    .article-img {
+        padding: 0;
+    }
+
+}
+
+/* Add a space between the last news story and the footer */
+.final-news-story {
+    margin-bottom: 100px;
+}
+

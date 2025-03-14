@@ -1,0 +1,21 @@
+.contact-page-top {
+    color: var(--text-color-second);
+    padding: 10px 100px 100px 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact-first-statement {
+    font-size: 300%
+}
+
+#contact-second-statement {
+    font-size: 180%;
+}
+
+#contact-first-statement span{
+    font-size: 170%;
+    font-weight: bolder;
+}

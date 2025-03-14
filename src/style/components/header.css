@@ -1,0 +1,35 @@
+/*Styling for main navigation bar*/
+nav {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Styling for logo text area*/
+nav .logo {
+    flex-grow: 1;
+    padding: 14px 15px;
+    color:var(--text-color-second);
+}
+
+/* Styling for nav bar contents */
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Styling for nav bar list contents */
+.nav-bar li a {
+    padding: 14px 10px;
+    color:var(--text-color-second);
+    text-decoration: none;
+    display: block;
+}
+
+/* Styling for nav bar contents when hovering */
+.nav-bar li a:hover:not(.active) {
+    background-color: var(--green-shade);
+}
+
