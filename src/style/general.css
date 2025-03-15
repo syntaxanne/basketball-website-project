@@ -5,11 +5,14 @@
     --pink-shade: #F93365FF;
     --orange-shade-2: #E67E22;
     --green-shade: #8dcc38;
+    
+    --main-font:"Rubik", sans-serif;
 
     /* Colors for gradient background */
     --purple-shade: #2f0132;
     --orange-shade: #F97556;
     --yellow-shade: #F9C448;
+    
 }
 
 html, body {

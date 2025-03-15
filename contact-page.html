@@ -43,14 +43,63 @@
     <!-- Top section-->
     <section class="bg-gradient contact-page-top">
         <div>
-            <p id="contact-first-statement"><span>GET</span> in Touch</p>
+            <p id="contact-first-statement"><span>GET</span> in touch</p>
             <p id="contact-second-statement">Got an epic basketball story? Shoot it our way!</p>
         </div>
-        <div><img src="./src/media/icons/whatsapp.svg" alt=""></div>
+        <!-- <div><img src="./src/media/icons/whatsapp.svg" alt=""></div> -->
     </section>
     <!-- End of Top section-->
 
-
+    <section class="form-section">
+        <div class="form-section-component">
+            <form>
+                <!-- Name -->
+                <input type="text" placeholder="Your full name">
+                <!-- Address -->
+                <input type="email" placeholder="Your email address">
+                <!-- Query options dropdown box -->
+                <select id="query-select">
+                    <option value="subject">Select query</option>
+                    <option value="player-team-news">Player and Team News</option>
+                    <option value="trade-rumors">Trade and Transfer Rumors</option>
+                    <option value="opinion">Opinion and Analysis</option>
+                    <option value="feature-stories">Feature Stories</option>
+                    <option value="off-court-news">Off-Court News</option>
+                </select>
+                <textarea
+                    placeholder="Tell us more about your basketball news interests and coverage needs."></textarea>
+                <button class="form-button">SUBMIT STORY</button>
+            </form>
+        </div>
+        <!-- Contact information -->
+        <div class="form-section-component" id="contact-div">
+            <p id="topic-contact"><span>CONTACT</span> US</p>
+            <p>Tell us more about your basketball news interests and coverage needs.</p>
+            <p>Hit us up — call, email, or swing by our office!</p>
+            <div id="business-info">
+                <!-- Address details -->
+                <div class="details-div">
+                    <img src="./src/media/icons/location.svg">
+                    <div>
+                        <p>Basketball Insider HQ</p>
+                        <p>123 Slam Dunk Avenue</p>
+                        <p>Downtown Baller City, BB 90210</p>
+                        <p>Sri Lanka</p>
+                    </div>
+                </div>
+                <!-- Phone details -->
+                <div class="details-div">
+                    <img src="./src/media/icons/telephone.svg">
+                    <p>(555) 123-4567</p>
+                </div>
+                <!-- Email details -->
+                <div class="details-div">
+                    <img src="./src/media/icons/envelope.svg">
+                    <p>contact@basketballinsider.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 

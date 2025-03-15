@@ -1,3 +1,7 @@
+/*************************\
+  Styles for Contact page
+\*************************/
+
 .contact-page-top {
     color: var(--text-color-second);
     padding: 10px 100px 100px 125px;
@@ -19,3 +23,105 @@
     font-size: 170%;
     font-weight: bolder;
 }
+
+/**************************\
+  Styles for Form section
+\**************************/
+
+.form-section {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--text-color-second);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px 0 0;
+    
+}
+
+.form-section > :first-child {
+    flex: 2;
+}
+
+.form-section > :last-child {
+    flex: 1;
+}
+
+.form-section-component {
+    padding: 20px;
+}
+
+form input, textarea, #query-select {
+    font-size: 120%;
+    margin-bottom: 25px;
+    padding: 5px;
+    border: 1px solid var(--green-shade);
+}
+
+textarea {
+    height: 200px;
+    font-family: var(--main-font);
+}
+
+/* Styles for the button */
+.form-button {
+    font-size: 120%;
+    font-family: var(--main-font);
+    padding: 17px 40px;
+    width: 300px;
+    color: var(--purple-shade);
+    border: 1px solid var(--green-shade);
+    background-color: var(--green-shade);
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-button:hover {
+    background-color: var(--purple-shade);
+    color: var(--green-shade);
+    border-color: var(--text-color-second);
+}
+
+/* Style for the contact information */
+#contact-div {
+    background-color: var(--text-color-main);
+    color: var(--text-color-second);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+
+}
+
+#topic-contact {
+    font-size: 250%;
+    margin: 0 0 20px 0;
+}
+
+#topic-contact span {
+    color: var(--orange-shade);
+    font-size: 150%;
+}
+
+/* #business-info {
+    padding: 30px;
+} */
+
+.details-div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.details-div img {
+    margin-right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
