@@ -78,7 +78,12 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 50px 25px;
-    max-width: calc(25% - 20px);
+}
+
+/* Selecting every child in news-article-container */
+/* Setting the news article to have equal space */
+.news-articles-container > * {
+    flex: 1;
 }
 
 .news-article .news-story-body {
