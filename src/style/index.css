@@ -95,10 +95,11 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .article-image img {
-    width: 300px;
+    width: 100%;
 }
 
 /*Styling link to News page at bottom of each news story*/
@@ -208,5 +209,13 @@
     opacity: 0.8;
 }
 
+/* Add responsive CSS */
+@media screen and (max-width: 1000px) {
+    .news-articles-container {
+        flex-direction: column;
+    }
 
-
+    .article-image {
+        padding: 20px 0 0 0;
+    }
+}

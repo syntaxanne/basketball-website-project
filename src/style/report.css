@@ -61,7 +61,7 @@
 /* CSS for responsiveness */
 /* When the screen width becomes smaller than 1000px, change flex direction */
 @media screen and (max-width: 1000px) {
-    .explanation {
+    .news-article {
         flex-direction: column;
     }
 }
