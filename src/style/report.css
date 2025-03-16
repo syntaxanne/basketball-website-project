@@ -18,6 +18,15 @@
     font-size: 150%;
 }
 
+/* Learned from https://css-generators.com/custom-borders/ */
+.zigzag-curvy-bottom-border {
+    --mask:
+        radial-gradient(38px at 75% 100%, #0000 98%, #000) 50% calc(100% - 38px)/152px 100% repeat-x,
+        radial-gradient(38px at 25% 50%, #000 99%, #0000 101%) bottom/152px 76px repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
 /**************************\
   Things learned section
 \**************************/
@@ -25,11 +34,16 @@
 .things-learned-section {
     padding: 100px 200px;
     background-color: var(--text-color-second);
+    display: flex;
+    flex-direction: row;
 }
 
 #things-i-learned {
     font-size: 250%;
     margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #things-i-learned p {
@@ -41,21 +55,17 @@
     font-size: 140%;
 }
 
+/**************************\
+  First section of report
+\**************************/
 
-/* 1st section */
 .first-section {
-    color: var(--text-color-main);
-    padding: 10px 100px 100px 125px;
+    color: var(--text-color-second);
+    background-color: var(--text-color-main);
+    padding: 100px 100px 150px 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-#topic {
-    font-size: 200%;
-    text-align: center;
-    padding-bottom: 20px;
-    font-family: "Exo 2", sans-serif;
+    justify-content: center;
 }
 
 .work-lists {
@@ -64,19 +74,9 @@
     text-align: left;
 }
 
-/* Learned from https://css-generators.com/custom-borders/ */
-.zigzag-curvy-bottom-border {
-    --mask:
-        radial-gradient(38px at 75% 100%, #0000 98%, #000) 50% calc(100% - 38px)/152px 100% repeat-x,
-        radial-gradient(38px at 25% 50%, #000 99%, #0000 101%) bottom/152px 76px repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-}
-
 /****************************\
   Styles for Second section
 \****************************/
-
 
 .second-section {
     color: var(--text-color-main);
@@ -127,11 +127,11 @@
 /* Learned from https://www.geeksforgeeks.org/how-to-create-a-color-transition-effect-in-css/ */
 @keyframes colorTransition {
     0% {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     100% {
-        background-color: var(--text-color-primary);
+        background-color: var(--text-color-main);
     }
 }
 
