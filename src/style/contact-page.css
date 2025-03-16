@@ -2,6 +2,11 @@
   Styles for Contact page
 \*************************/
 
+#news-page-ball img {
+    width:60%;
+    padding-left: 40%;
+}
+
 .contact-page-top {
     color: var(--text-color-second);
     padding: 10px 100px 100px 125px;
@@ -121,3 +126,29 @@ textarea {
     height: 30px;
 }
 
+/* CSS for responsiveness */
+/* When the screen width becomes smaller than 1000px, change flex direction */
+@media screen and (max-width: 1000px) {
+    .contact-page-top {
+        flex-direction: column;
+    }
+
+    .form-section {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    #news-page-ball img {
+        padding: 0;
+    }
+
+    .contact-page-top {
+        padding: 10px;
+        text-align: center;
+    }
+
+    form {
+        padding: 0;
+    }
+}

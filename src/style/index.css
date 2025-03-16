@@ -70,6 +70,7 @@
 .news-articles-container {
     display: flex;
     flex-direction: row;
+    padding: 10px;
 }
 
 /* Styling to have the 4 articles side by side */
@@ -209,7 +210,9 @@
     opacity: 0.8;
 }
 
-/* Add responsive CSS */
+/****************************\
+  Styles for responsive CSS
+\****************************/ 
 @media screen and (max-width: 1000px) {
     .news-articles-container {
         flex-direction: column;
@@ -218,4 +221,31 @@
     .article-image {
         padding: 20px 0 0 0;
     }
+
+    .introduction-section {
+        flex-direction: column;
+        
+    }
+    .news-heading {
+        text-align: center;
+    }
+
+    .history-section {
+        flex-direction: column;
+    }
+
+    #history-img {
+        padding: 0;
+        text-align: center;
+    }
+
+    .introduction-section {
+        padding: 10px;
+    }
+
+    .history-text {
+        margin: 0;
+    }
 }
+
+
