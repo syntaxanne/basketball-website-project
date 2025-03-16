@@ -281,13 +281,6 @@
 /* CSS for responsiveness */
 /* When the screen width becomes smaller than 1000px, change flex direction */
 @media screen and (max-width: 1000px) {
-    .news-article {
-        flex-direction: column;
-    }
-
-    .fourth-section {
-        flex-direction: column;
-    }
 
     .things-learned-section {
         flex-direction: column;
@@ -302,7 +295,7 @@
     }
 
     .second-section {
-        padding: 5px;
+        padding: 15px;
     }
 
     .explanation {
@@ -313,8 +306,19 @@
         text-align: center;
     }
 
-    #fourth-section-text {
+    .fourth-section {
+        flex-direction: column;
         padding: 0;
+        /* padding: 5px; */
+    }
+
+    #fourth-section-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    #fourth-section-text {
+        padding: 15px;
     }
 
     .Iam {
