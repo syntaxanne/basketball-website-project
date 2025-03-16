@@ -246,6 +246,14 @@
     .history-text {
         margin: 0;
     }
+
+    #history-img img {
+        width: 100%;
+    }
+
+    #history-statement-1 {
+        text-align: left;
+    }
 }
 
 
