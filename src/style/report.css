@@ -2,9 +2,49 @@
   Styling for report page
 \**************************/
 
+/* Report header section */
+.report-header {
+    color: var(--text-color-second);
+    padding: 40px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 150%;
+}
+
+#report-author-name {
+    padding: 20px 0;
+    font-size: 150%;
+}
+
+/**************************\
+  Things learned section
+\**************************/
+
+.things-learned-section {
+    padding: 100px 200px;
+    background-color: var(--text-color-second);
+}
+
+#things-i-learned {
+    font-size: 250%;
+    margin-right: 200px;
+}
+
+#things-i-learned p {
+    padding: 10;
+    margin: 0;
+}
+
+#things-i-learned-1 {
+    font-size: 140%;
+}
+
+
 /* 1st section */
 .first-section {
-    color: var(--text-color-second);
+    color: var(--text-color-main);
     padding: 10px 100px 100px 125px;
     display: flex;
     flex-direction: column;
@@ -25,7 +65,7 @@
 }
 
 /* Learned from https://css-generators.com/custom-borders/ */
-.zigzag-bottom-border {
+.zigzag-curvy-bottom-border {
     --mask:
         radial-gradient(38px at 75% 100%, #0000 98%, #000) 50% calc(100% - 38px)/152px 100% repeat-x,
         radial-gradient(38px at 25% 50%, #000 99%, #0000 101%) bottom/152px 76px repeat-x;
