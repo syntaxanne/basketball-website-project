@@ -226,8 +226,14 @@
         flex-direction: column;
         
     }
+
     .news-heading {
         text-align: center;
+        padding: 50px 0 0 0;
+    }
+
+    .news-articles-container {
+        padding: 0;
     }
 
     .history-section {
@@ -254,6 +260,7 @@
     #history-statement-1 {
         text-align: left;
     }
+
 }
 
 
