@@ -100,7 +100,18 @@
     .article-img {
         padding: 0;
     }
+    
+    .news-headline {
+        padding: 10px;
+    }
 
+    .news-story-body {
+        padding: 20px;
+    }
+
+    .article-img {
+        padding: 10px;
+    }
 }
 
 /* Add a space between the last news story and the footer */
