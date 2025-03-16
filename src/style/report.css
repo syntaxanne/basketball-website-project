@@ -5,7 +5,7 @@
 /* Report header section */
 .report-header {
     color: var(--text-color-second);
-    padding: 40px 0 100px 0;
+    padding: 40px 5px 100px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,6 +315,14 @@
 
     #fourth-section-text {
         padding: 0;
+    }
+
+    .Iam {
+        padding: 25px 0;
+    }
+
+    .third-section {
+        padding: 10px;
     }
 }
 
