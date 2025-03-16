@@ -46,3 +46,14 @@ footer {
 .footer-icons a:hover .hover-img {
     display: inline-block;
 }
+
+
+/****************************\
+  Styles for responsive CSS
+\****************************/ 
+
+@media screen and (max-width: 1000px) {
+    .footer-statements {
+        text-align: center;
+    }
+}

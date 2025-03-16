@@ -97,14 +97,6 @@
     max-width: calc(80%);
 }
 
-/* CSS for responsiveness */
-/* When the screen width becomes smaller than 1000px, change flex direction */
-@media screen and (max-width: 1000px) {
-    .news-article {
-        flex-direction: column;
-    }
-}
-
 /****************************\
   Styles for Third section
 \****************************/
@@ -165,14 +157,6 @@
     display: inline-block;
 }
 
-
-/* CSS for responsiveness */
-/* When the screen width becomes smaller than 1000px, change flex direction */
-@media screen and (max-width: 1000px) {
-    .fourth-section {
-        flex-direction: column;
-    }
-}
 
 #fourth-section-text {
     padding-left: 100px;
@@ -289,3 +273,48 @@
     font-size: 150%;
     padding-left: 50px;
   }
+
+/****************************\
+  Styles for responsive CSS
+\****************************/  
+
+/* CSS for responsiveness */
+/* When the screen width becomes smaller than 1000px, change flex direction */
+@media screen and (max-width: 1000px) {
+    .news-article {
+        flex-direction: column;
+    }
+
+    .fourth-section {
+        flex-direction: column;
+    }
+
+    .things-learned-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #things-i-learned {
+        text-align: center;
+        margin: 0;
+    }
+
+    .second-section {
+        padding: 5px;
+    }
+
+    .explanation {
+        flex-direction: column;
+    }
+
+    #work-list-img {
+        text-align: center;
+    }
+
+    #fourth-section-text {
+        padding: 0;
+    }
+}
+
