@@ -33,3 +33,12 @@ nav .logo {
     background-color: var(--green-shade);
 }
 
+@media screen and (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
