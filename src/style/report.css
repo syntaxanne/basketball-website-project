@@ -43,6 +43,10 @@
     text-decoration: none;
 }
 
+#github-icon p {
+    color: var(--purple-shade);
+}
+
 /**************************\
   Things learned section
 \**************************/
