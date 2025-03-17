@@ -310,12 +310,20 @@
         margin: 0;
     }
 
+    .first-section {
+        padding: 60px 25px 100px 25px;
+    }
+
     .second-section {
-        padding: 15px;
+        padding: 20px;
     }
 
     .explanation {
         flex-direction: column;
+    }
+
+    .work-lists {
+        font-size: 160%;
     }
 
     #work-list-img {
