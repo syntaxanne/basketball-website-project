@@ -297,7 +297,10 @@
 /* CSS for responsiveness */
 /* When the screen width becomes smaller than 1000px, change flex direction */
 @media screen and (max-width: 1000px) {
-
+    .report-header{
+        font-size: 120%;
+    }
+    
     .things-learned-section {
         flex-direction: column;
         text-align: center;
@@ -347,7 +350,6 @@
     #fourth-section-text {
         padding: 0;
     }
-
 
     .Iam {
         padding: 25px 0 80px 0;
