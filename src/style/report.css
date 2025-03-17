@@ -195,7 +195,7 @@
     padding: 2em 5em;
     font: normal 40px/50px Montserrat, sans-serif;
     color: #999;
-  }
+  } 
   .Iam p {
     height: 50px;
     float: left;
@@ -315,7 +315,7 @@
     }
 
     .second-section {
-        padding: 20px;
+        padding: 60px 20px;
     }
 
     .explanation {
@@ -330,10 +330,13 @@
         text-align: center;
     }
 
+    .third-section {
+        padding: 80px 20px;
+    }
+
     .fourth-section {
         flex-direction: column;
-        padding: 0;
-        /* padding: 5px; */
+        padding: 80px 20px;
     }
 
     #fourth-section-img {
@@ -342,15 +345,17 @@
     }
 
     #fourth-section-text {
-        padding: 5px;
+        padding: 0;
     }
+
 
     .Iam {
-        padding: 25px 0;
+        padding: 25px 0 80px 0;
     }
 
-    .third-section {
-        padding: 10px;
+    .fifth-section {
+        padding: 80px 20px;
     }
+    
 }
 
